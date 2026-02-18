@@ -1,0 +1,312 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM+c8U4ZhJqkcVZDozwkDCZ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/quevedooo/PROGCOM_B_2026/blob/main/Desarollo%20ejercicios%20en%20clase\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Área de triángulo"
+      ],
+      "metadata": {
+        "id": "EY1FnBhX8QHZ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0FkXFkaP66bo",
+        "outputId": "314619ee-67e4-4e0b-d4f5-75bb662eddeb"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingresa la base:2\n",
+            "Ingrese la altura2\n",
+            "El area del triángulo es: 2.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "Base=float(input(\"Ingresa la base:\"))\n",
+        "Altura=float(input(\"Ingrese la altura\"))\n",
+        "Area=(Base*Altura)/2\n",
+        "print(\"El área del triángulo es:\",Area)\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Celsius a Farenheit"
+      ],
+      "metadata": {
+        "id": "GW6LNIJ8-AWX"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Celsius=float(input(\"Ingresa la temperatura en Celsius:\"))\n",
+        "farenheit=(Celsius*9/5)+32\n",
+        "print(\"La temperatura en farenheit es:\",farenheit)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VLaJtBWo-E_k",
+        "outputId": "2db60c45-b5f2-4611-c37a-c296cac5d783"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingresa la temperatura en Celsius:25\n",
+            "La temperatura en farenheit es: 77.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Promedio de tres números"
+      ],
+      "metadata": {
+        "id": "oRj3V1rC-seA"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num1=float(input(\"Ingrese el primer número:\"))\n",
+        "num2=float(input(\"Ingrese el segundo número:\"))\n",
+        "num3=float(input(\"Ingrese el tercer número:\"))\n",
+        "promedio=(num1+num2+num3)/3\n",
+        "print(\"El promedio de los tres numeros es:\",promedio)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "S8bfl07J-wRe",
+        "outputId": "96e389c1-9ba2-44ba-e3e6-d1257d3b2c51"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el primer número:3\n",
+            "Ingrese el segundo número:3\n",
+            "Ingrese el tercer número:3\n",
+            "El promedio de los tres numeros es: 3.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Perímetro y área del círculo"
+      ],
+      "metadata": {
+        "id": "dlcBIGut_k8O"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "radio=float(input(\"Ingrese el radio del círculo:\"))\n",
+        "pi=3.141592\n",
+        "perimetro=(2*pi*radio)\n",
+        "area=(pi*radio**2)\n",
+        "print(\"El perímetro del círculo es:\",perimetro)\n",
+        "print(\"El área del círculo es:\",area)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "75edItBz_sQ3",
+        "outputId": "eadb15d3-c07c-4aee-9461-9e8854cf24db"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el radio del círculo:5\n",
+            "El perímetro del círculo es: 31.41592\n",
+            "El área del círculo es: 78.5398\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Ecuación cuadrática"
+      ],
+      "metadata": {
+        "id": "9ra7cRuDAiA-"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=float(input(\"Ingrese el valor de a:\"))\n",
+        "b=float(input(\"Ingrese del valor de b:\"))\n",
+        "c=float(input(\"Ingrese el valor de c:\"))\n",
+        "cuadratica1=\n",
+        "cuadratica2=\n",
+        "print(\"El primer valor de x es:\",cuadratica1)\n",
+        "print(\"El segundo valor de x es:\",cuadratica2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "id": "gveewcKKAmv1",
+        "outputId": "b0d1d012-957b-4b8b-c181-d7dafae9fb07"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid decimal literal (ipython-input-2252128534.py, line 4)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipython-input-2252128534.py\"\u001b[0;36m, line \u001b[0;32m4\u001b[0m\n\u001b[0;31m    cuadratica1=((-b)+b**2-(4a*c)**0.5)/2*a\u001b[0m\n\u001b[0m                            ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid decimal literal\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Par o impar"
+      ],
+      "metadata": {
+        "id": "GNcCXFqWEyHX"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##Normal\n",
+        "Num=float(input(\"Ingrese el número:\"))\n",
+        "if Num%2==0:\n",
+        "   print(\"El número ingresado es par\")\n",
+        "else:\n",
+        "   print(\"El número igresado es impar\")\n",
+        "##Ternario\n",
+        "Num = float(input(\"Ingrese el número: \"))\n",
+        "print(\"El número ingresado es par\" if Num % 2 == 0 else \"El número ingresado es impar\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "t0GMuW-mE2jP",
+        "outputId": "2733a0c4-1302-4928-b1f5-60bfb9f3d122"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el número:2\n",
+            "El número ingresado es par\n",
+            "Ingrese el número: 2\n",
+            "El número ingresado es par\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Año bisiesto"
+      ],
+      "metadata": {
+        "id": "CbUXCzeZF87D"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##Normal\n",
+        "año=int(input(\"Ingres su año\"))\n",
+        "if(año%4==0 and año%100 !=0) or (año%400==0):\n",
+        "    print(\"El año es bisiesto\")\n",
+        "else:\n",
+        "    print(\"El año no es bisiesto\")\n",
+        "##Ternario\n",
+        "año=int(input(\"Ingrese su año: \"))\n",
+        "print(\"El año es bisiesto\" if (año % 4 == 0 and año % 100 != 0) or (año % 400 == 0) else \"El año no es bisiesto\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4Z1CM0YgGkUu",
+        "outputId": "d3fdf853-b55f-424b-8b69-9b1ef03266e5"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingres su año2026\n",
+            "El año no es bisiesto\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "gzNBqyGcIK99"
+      }
+    }
+  ]
+}
